@@ -1,8 +1,10 @@
-import React from 'react';
 import Head from 'next/head';
+
 import styles from '../styles/home.module.scss';
+
 import Image from 'next/image'
 import techsImage from '../../public/images/techs.svg'
+
 export default function Home() {
   return (
     <>

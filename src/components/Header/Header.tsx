@@ -29,7 +29,7 @@ const header = () => {
           </ActiveLink>
         </nav>
         <a
-          className={styles.readyButton}
+          className={`${styles.readyButton} button`}
           type="button"
           href="www.instagram.com/gabriel.dev_"
         >

@@ -22,19 +22,13 @@
     margin-top: 2.5rem;
     color: var(--white);
   }
-  span{
+  p{
     font-size: 1rem;
     line-height: 2.25rem;
     color: var(--white);
   }
   button{
-    background-color: var(--rose-900);
-    border: 0;
-    padding: 1rem 1.8rem;
     margin-top: 1.5rem;
-    border-radius: 7px;
-    color: var(--white);
-    font-weight: bold;
   }
 }
 
@@ -65,9 +59,39 @@
     margin-top: 2.2rem;
     color: var(--white);
   }
-  span{
+  p{
     font-size: 1rem;
     line-height: 2.25rem;
     color: var(--white);
+  }
+}
+
+.nextLevelContent{
+  margin: 6rem auto;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  h2{
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    color: var(--white);
+    span{
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      color: var(--rose-900);
+    }
+  }
+  p{
+    font-size: 1rem;
+    line-height: 2.25rem;
+    color: var(--white);
+  }
+
+  button{
+    margin-top: 2.5rem;
   }
 }

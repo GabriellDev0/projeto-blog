@@ -1,0 +1,73 @@
+
+.sectionCTA{
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+
+    img{
+      max-width: 640px;
+    }
+}
+
+.ctaText{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  h1{
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.5rem;
+    color: var(--white);
+  }
+  span{
+    font-size: 1rem;
+    line-height: 2.25rem;
+    color: var(--white);
+  }
+  button{
+    background-color: var(--rose-900);
+    border: 0;
+    padding: 1rem 1.8rem;
+    margin-top: 1.5rem;
+    border-radius: 7px;
+    color: var(--white);
+    font-weight: bold;
+  }
+}
+
+.division{
+  height: 1px;
+  border-color: var(--gray-200);
+}
+
+.sectionContent{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img{
+    max-width: 550px;
+  }
+}
+
+.sectionText{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  h2{
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.2rem;
+    color: var(--white);
+  }
+  span{
+    font-size: 1rem;
+    line-height: 2.25rem;
+    color: var(--white);
+  }
+}

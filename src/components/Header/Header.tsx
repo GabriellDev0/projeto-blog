@@ -9,7 +9,7 @@ import ActiveLink from '../ActiveLink/index';
 const header = () => {
   return (
     <header className={styles.headerContainer}>
-      <div className={styles.headerContent}>
+      <div className={`${styles.headerContent} container`}>
         <ActiveLink href="/" activeClassName={styles.active}>
           <a>
             <Image src={logo} alt="Dev Resiliente Logo" />

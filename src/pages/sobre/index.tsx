@@ -35,7 +35,7 @@ const About = ( { content }: ContentProps ) => {
         />
         <link
           rel="canonical"
-          href={`https://projeto-blog-orpin.vercel.app/sobre`}
+          href={`https://www.devresiliente.com/sobre`}
         />
       </Head>
       <main className={styles.container}>

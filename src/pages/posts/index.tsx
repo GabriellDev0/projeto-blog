@@ -90,7 +90,7 @@ const Posts = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
           name="description"
           content="Página onde possui todas as postagens do meu Blog, aprenda bastante sobre programação."
         />
-        <link rel="canonical" href="https://projeto-blog-orpin.vercel.app/posts" />
+        <link rel="canonical" href="https://www.devresiliente.com/posts" />
       </Head>
       <main className={`${styles.container} container`}>
         <section className={styles.posts}>

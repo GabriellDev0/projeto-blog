@@ -28,7 +28,7 @@ const Post = ({ post }: PostProps) => {
         />
         <link
           rel="canonical"
-          href={`https://projeto-blog-orpin.vercel.app/${post.slug}`}
+          href={`https://www.devresiliente.com/${post.slug}`}
         />
       </Head>
       <main className={`${styles.container} container`}>

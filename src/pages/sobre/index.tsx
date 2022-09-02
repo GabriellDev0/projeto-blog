@@ -35,7 +35,7 @@ const About = ( { content }: ContentProps ) => {
         />
         <link
           rel="canonical"
-          href={`http://localhost:3000/sobre`}
+          href={`https://projeto-blog-orpin.vercel.app/sobre`}
         />
       </Head>
       <main className={styles.container}>

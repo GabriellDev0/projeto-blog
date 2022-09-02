@@ -28,7 +28,7 @@ const Post = ({ post }: PostProps) => {
         />
         <link
           rel="canonical"
-          href={`http://localhost:3000/posts/${post.slug}`}
+          href={`https://projeto-blog-orpin.vercel.app/${post.slug}`}
         />
       </Head>
       <main className={`${styles.container} container`}>

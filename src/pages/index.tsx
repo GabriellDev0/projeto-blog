@@ -37,7 +37,7 @@ export default function Home({ content }:ContentProps) {
           name="description"
           content="Página inicial do meu Blog, venha conhecer um pouco e aprenda diversos conteúdos."
         />
-        <link rel="canonical" href="http://localhost:3000/" />
+        <link rel="canonical" href="https://projeto-blog-orpin.vercel.app/" />
       </Head>
       <main className={`${styles.containerMain} `}>
         <section className={`${styles.sectionCTA} container`}>

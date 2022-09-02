@@ -53,6 +53,8 @@ export default function Home({ content }:ContentProps) {
           <img
             src="/images/banner-content.png"
             alt="Conteúdos Dev Resiliente"
+            width="640px"
+            height="640px"
           />
         </section>
         <hr className={styles.division} />
@@ -83,7 +85,7 @@ export default function Home({ content }:ContentProps) {
         </section>
 
         <footer className={`${styles.nextLevelContent} container`}>
-          <Image src={techsImage} alt="Tecnologias" />
+          <Image src={techsImage} alt="Tecnologias" width={300} height={60} />
           <h2>
             Mais de <span>15 mil</span> já levaram sua carreira ao próximo
             nivel.

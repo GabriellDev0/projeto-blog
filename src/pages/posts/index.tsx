@@ -118,10 +118,10 @@ const index = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
           <div className={styles.buttonNavigate}>
             {Number(currentPage) >= 2 && (
               <div>
-                <button onClick={() => navigatePage(1)}>
+                <button aria-label='First Page' onClick={() => navigatePage(1)}>
                   <FiChevronsLeft size={25} color="#FFF" />
                 </button>
-                <button onClick={() => navigatePage(Number(currentPage - 1))}>
+                <button aria-label='Previous Page' onClick={() => navigatePage(Number(currentPage - 1))}>
                   <FiChevronLeft size={25} color="#FFF" />
                 </button>
               </div>
@@ -129,10 +129,10 @@ const index = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
 
             {Number(currentPage) < Number(totalPage) && (
               <div>
-                <button onClick={() => navigatePage(Number(currentPage+1))}>
+                <button aria-label='Next Page' onClick={() => navigatePage(Number(currentPage+1))}>
                   <FiChevronRight size={25} color="#FFF" />
                 </button>
-                <button onClick={() => navigatePage(Number(totalPage))}>
+                <button aria-label='Last Page' onClick={() => navigatePage(Number(totalPage))}>
                   <FiChevronsRight size={25} color="#FFF" />
                 </button>
               </div>

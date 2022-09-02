@@ -24,11 +24,10 @@ type Content = {
 };
 
 interface ContentProps {
-  content: Content
+  content: Content;
 }
 
-export default function Home({ content }:ContentProps) {
-
+export default function Home({ content }: ContentProps) {
   return (
     <>
       <Head>
@@ -43,10 +42,12 @@ export default function Home({ content }:ContentProps) {
         <section className={`${styles.sectionCTA} container`}>
           <div className={styles.ctaText}>
             <h1>{content.title}</h1>
-            <p>
-              {content.titleContent}
-            </p>
-            <a href={content.linkAction} rel="noopener noreferrer" target="_blank">
+            <p>{content.titleContent}</p>
+            <a
+              href={content.linkAction}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <button className="button">COMEÇAR AGORA!</button>
             </a>
           </div>
@@ -61,9 +62,7 @@ export default function Home({ content }:ContentProps) {
         <section className={`${styles.sectionContent} container`}>
           <div className={styles.sectionText}>
             <h2>{content.mobileTitle}</h2>
-            <p>
-              {content.mobileContent}
-            </p>
+            <p>{content.mobileContent}</p>
           </div>
           <img
             src={content.mobileBanner}
@@ -78,9 +77,7 @@ export default function Home({ content }:ContentProps) {
           />
           <div className={styles.sectionText}>
             <h2>{content.webTitle}</h2>
-            <p>
-              {content.webContent}
-            </p>
+            <p>{content.webContent}</p>
           </div>
         </section>
 
@@ -91,7 +88,11 @@ export default function Home({ content }:ContentProps) {
             nivel.
           </h2>
           <p>E você vai perder a chance de evoluir de uma vez por todas?</p>
-          <a href={content.linkAction} rel="noopener noreferrer" target="_blank">
+          <a
+            href={content.linkAction}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <button className="button">ACESSAR TURMA!</button>
           </a>
         </footer>
@@ -135,6 +136,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       content,
     },
-    revalidate: 60 * 2, // A cada 2 minutos
+    revalidate: 60 * 60 * 24, // A cada 24horas
   };
 };

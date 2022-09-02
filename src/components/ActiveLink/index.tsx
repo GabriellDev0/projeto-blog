@@ -2,14 +2,13 @@ import { ReactElement, cloneElement } from 'react'
 import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/router'
 
-
 //Vai estender também o ...rest das propriedades do Link.
 interface ActiveLinkProps extends LinkProps{
   children: ReactElement
   activeClassName: string;
 }
 
-const index = ({children, activeClassName, ...rest}:ActiveLinkProps) => {
+const ActiveLink = ({children, activeClassName, ...rest}:ActiveLinkProps) => {
   const { asPath } = useRouter();  // /algumaCoisa
   
   const className = asPath === rest.href ? activeClassName : ''
@@ -23,4 +22,4 @@ const index = ({children, activeClassName, ...rest}:ActiveLinkProps) => {
   )
 }
 
-export default index
+export default ActiveLink

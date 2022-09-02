@@ -43,16 +43,16 @@ const About = ( { content }: ContentProps ) => {
               <section className={styles.ctaText}>
                   <h1>{content.title}</h1>
                   <div dangerouslySetInnerHTML={{ __html: content.description }}></div>
-                  <a href={content.youtube} target="_blank">
+                  <a href={content.youtube} rel="noopener noreferrer" target="_blank"  aria-label='Youtube'>
                       <FaYoutube size={40}/>
                   </a>
-                  <a href={content.instagram} target="_blank">
+                  <a href={content.instagram} rel="noopener noreferrer" target="_blank" aria-label='Instagram'>
                       <FaInstagram size={40}/>
                   </a>
-                  <a href={content.facebook} target="_blank">
+                  <a href={content.facebook} rel="noopener noreferrer" target="_blank" aria-label='Facebook'> 
                       <FaFacebook size={40}/>
                   </a>
-                  <a href={content.linkedin} target="_blank">
+                  <a href={content.linkedin} rel="noopener noreferrer" target="_blank" aria-label='Linkedin'>
                       <FaLinkedin size={40}/>
                   </a>
               </section>

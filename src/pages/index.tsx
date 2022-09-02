@@ -46,7 +46,7 @@ export default function Home({ content }:ContentProps) {
             <p>
               {content.titleContent}
             </p>
-            <a href={content.linkAction} target="_blank">
+            <a href={content.linkAction} rel="noopener noreferrer" target="_blank">
               <button className="button">COMEÇAR AGORA!</button>
             </a>
           </div>
@@ -91,7 +91,7 @@ export default function Home({ content }:ContentProps) {
             nivel.
           </h2>
           <p>E você vai perder a chance de evoluir de uma vez por todas?</p>
-          <a href={content.linkAction} target="_blank">
+          <a href={content.linkAction} rel="noopener noreferrer" target="_blank">
             <button className="button">ACESSAR TURMA!</button>
           </a>
         </footer>

@@ -33,7 +33,7 @@ import {
   FiChevronsRight,
 } from 'react-icons/fi';
 
-const index = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
+const Posts = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
 
   const [currentPage, setCurrentPage] = useState(Number(page));
   const [posts, setPosts] = useState(postsBlog || []);
@@ -144,7 +144,7 @@ const index = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
   );
 };
 
-export default index;
+export default Posts;
 
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();

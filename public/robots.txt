@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.devresiliente.com/
+
+# Sitemaps
+Sitemap: https://www.devresiliente.com/sitemap.xml

@@ -30,8 +30,9 @@ const header = () => {
         </nav>
         <a
           className={`${styles.readyButton} button`}
-          type="button"
-          href="www.instagram.com/gabriel.dev_"
+          href="https://www.instagram.com/gabriel.dev_/"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           COMEÇAR
         </a>

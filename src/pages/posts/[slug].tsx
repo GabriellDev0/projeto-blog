@@ -11,6 +11,7 @@ interface PostProps {
   post: {
     slug: string;
     title: string;
+    descriptionText1: string
     description: string;
     cover: string;
     updatedAt: string;
@@ -24,7 +25,7 @@ const Post = ({ post }: PostProps) => {
         <title>{post.title}</title>
         <meta
           name="description"
-          content="Detalhes sobre o Post selecionado a baixo."
+          content={`${post.descriptionText1}`}
         />
         <link
           rel="canonical"
@@ -77,6 +78,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   const post = {
     slug: slug,
     title: RichText.asText(response.data.title),
+    descriptionText1: response.data.description[0].text,
     description: RichText.asHtml(response.data.description),
     cover: response.data.cover.url,
     updatedAt: new Date(response.last_publication_date).toLocaleDateString(
@@ -88,7 +90,6 @@ export const getServerSideProps: GetServerSideProps = async ({
       },
     ),
   };
-
   return {
     props: {
       post,

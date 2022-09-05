@@ -27,7 +27,7 @@ const About = ({ content }: ContentProps) => {
   return (
     <>
       <Head>
-        <title>Dev Resiliente | Quem sou eu?</title>
+        <title>Quem sou eu - DevResiliente</title>
         <meta
           name="description"
           content="Detalhes sobre quem sou eu e sobre a minha empresa."

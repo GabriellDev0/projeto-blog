@@ -84,7 +84,7 @@ const Posts = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
   return (
     <>
       <Head>
-        <title>Dev Resiliente | Blog</title>
+        <title>Postagens do Blog - DevResiliente</title>
         <meta
           name="description"
           content="Página onde possui todas as postagens do meu Blog, aprenda bastante sobre programação."

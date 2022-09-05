@@ -31,10 +31,10 @@ export default function Home({ content }: ContentProps) {
   return (
     <>
       <Head>
-        <title>Apaixonado por tecnologia - Dev Resiliente</title>
+        <title>Dev Resiliente - Apaixonado por tecnologia</title>
         <meta
           name="description"
-          content="Página inicial do meu Blog, venha conhecer um pouco e aprenda diversos conteúdos."
+          content="Página inicial do meu Blog, venha conhecer um pouco e aprenda diversos conteúdos relacionados a programação."
         />
         <link rel="canonical" href="https://www.devresiliente.com/" />
       </Head>

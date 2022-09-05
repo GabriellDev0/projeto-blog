@@ -11,6 +11,7 @@
         margin-top: 2rem;
         padding-top: 2rem;
       }
+    }
       time{
         font-size: 1rem;
         display: flex;
@@ -24,7 +25,7 @@
         border-radius: 6px;
         border-image: linear-gradient(95deg, #f04848, transparent) 1;
       }
-      strong{
+      h2{
         display: block;
         font-size: 1.5rem;
         margin: 1rem 0;
@@ -37,10 +38,10 @@
         margin-top: 0.5rem;
         line-height: 1.62rem;
       }
-      &:hover strong{
+      &:hover h2{
         color: var(--rose-900);
       }
-    }
+   
 }
 
 

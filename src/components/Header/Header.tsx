@@ -16,17 +16,25 @@ const header = () => {
           </a>
         </ActiveLink>
         <nav>
-          <ActiveLink href="/" activeClassName={styles.active}>
-            <a>Home</a>
-          </ActiveLink>
+          <ul>
+            <li>
+              <ActiveLink href="/" activeClassName={styles.active}>
+                <a>Home</a>
+              </ActiveLink>
+            </li>
 
-          <ActiveLink href="/posts" activeClassName={styles.active}>
-            <a>Conteúdos</a>
-          </ActiveLink>
+            <li>
+              <ActiveLink href="/posts" activeClassName={styles.active}>
+                <a>Conteúdos</a>
+              </ActiveLink>
+            </li>
 
-          <ActiveLink href="/sobre" activeClassName={styles.active}>
-            <a>Quem somos?</a>
-          </ActiveLink>
+            <li>
+              <ActiveLink href="/sobre" activeClassName={styles.active}>
+                <a>Sobre mim</a>
+              </ActiveLink>
+            </li>
+          </ul>
         </nav>
         <a
           className={`${styles.readyButton} button`}

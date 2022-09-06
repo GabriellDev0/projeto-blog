@@ -96,12 +96,12 @@ const Posts = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
           <article key={post.slug} className={styles.posts}>
             <header>
               <h2>
-                <Link href={`/posts/${post.slug}`}>
+                <Link href={`https://www.devresiliente.com/posts/${post.slug}`}>
                   <a>{post.title}</a>
                 </Link>
               </h2>
             </header>
-            <Link href={`/posts/${post.slug}`}>
+            <Link href={`https://www.devresiliente.com/posts/${post.slug}`}>
               <a key={post.slug} aria-hidden="true">
                 <div className={styles.img}>
                   <Image
@@ -118,7 +118,7 @@ const Posts = ({ posts: postsBlog, page, totalPage }: PostsProps) => {
             </Link>
             <time>{post.updatedAt}</time>
             <p>
-              <Link href={`/posts/${post.slug}`}>
+              <Link href={`https://www.devresiliente.com/posts/${post.slug}`}>
                 <a>{post.description}</a>
               </Link>
             </p>

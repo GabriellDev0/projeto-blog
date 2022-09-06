@@ -1,0 +1,46 @@
+.footer{
+  background-color: var(--gray-700);
+  padding: 60px;
+  color: var(--white);
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+      .footerNavigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 90px;
+        gap: 10px;
+         p{
+          font-size: 1.2rem;
+         }
+         a{
+          transition: color 0.2s;
+         }
+         a:hover{
+            color: var(--rose-900);
+         }
+      }
+      .footerCompany{
+        p{
+          word-wrap: break-word;
+        }
+      }
+}
+
+@media(max-width: 900px){
+  .left,.footer{
+      flex-direction: column;
+      gap: 60px;
+  }
+}

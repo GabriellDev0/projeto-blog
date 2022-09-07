@@ -11,7 +11,7 @@ interface PostProps {
   post: {
     slug: string;
     title: string;
-    descriptionText1: string
+    descriptionText1: string;
     description: string;
     cover: string;
     updatedAt: string;
@@ -23,13 +23,10 @@ const Post = ({ post }: PostProps) => {
     <>
       <Head>
         <title>{post.title}</title>
-        <meta
-          name="description"
-          content={`${post.descriptionText1}`}
-        />
+        <meta name="description" content={`${post.descriptionText1}`} />
         <link
           rel="canonical"
-          href={`https://www.devresiliente.com/${post.slug}`}
+          href={`https://www.devresiliente.com/posts/${post.slug}`}
         />
       </Head>
       <main className={`${styles.container} container`}>

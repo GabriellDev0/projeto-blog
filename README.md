@@ -1,5 +1,5 @@
 ## Título
-<h1 align="center"> Friendsgram - Rede social para mais que amigos, friends. </h1>
+<h1 align="center"> Projeto Blog - Dev Resiliente apaixonado por tecnologia. </h1>
 
 
 ## Índice 
